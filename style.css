@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #F9F4FB;
+    --pink: #B52184;
+    --purple: #312D64;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+    height: 100vh;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 1.0625rem;
+    
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--pink);
+}
+
+header p {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--purple);
+
+    margin-bottom: 35px;
+}
+
+header a img{
+    margin-bottom: 5rem;
+}
+
+#first-section {
+    padding: 53px 39px;
+    background: var(--purple);
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 19px;
+    padding: 27px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin-bottom: 40px;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    
+    font-weight: 800;
+    font-size: 29px;
+    color: var(--pink);
+}
+
+.card p {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--purple);
+}
+
+#second-section {
+    padding: 78px 40px;
+}
+
+#second-section form fieldset {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+
+   border: none;
+}
+
+#second-section form fieldset legend {
+    margin-bottom: 43px;
+
+    font-size: 32px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 900;
+    color: var(--pink);
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 12px;
+
+    border: 3px solid var(--purple);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.input-wrapper input {
+    border: none;
+    outline: none;
+}
+
+.input-wrapper input::placeholder {
+    color: var(--purple);
+    font-weight: 500;
+}
+
+#second-section form fieldset textarea {
+    border: 3px solid var(--purple);
+    border-radius: 16px;
+    width: 348px;
+    height: 200px;
+    padding: 16px;
+    outline: none;
+}
+
+#second-section form fieldset textarea::placeholder {
+    color: var(--purple);
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#second-section form fieldset button {
+    width: 150px;
+    padding: 11px;
+    background-color: var(--purple);
+    background-image: linear-gradient(#26225d, #a10f70);
+    border-radius: 16px;
+    border: none;
+
+    color: var(--white);
+    font-family: "Mulish", sans-serif;
+}
+
+#second-section form fieldset button:hover {
+    background-color: var(--purple);
+    background-image: linear-gradient(#373091, #bd1485);
+}
+
+footer {
+    background-color: var(--purple);
+    background-image: linear-gradient(#181548, #791457);
+
+    padding: 32px 16px;
+    text-align: center;
+}
+
+footer p {
+    color: var(--white);
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+}
+
+@media(min-width: 1024px) {
+    body {
+        height: 100%;
+        max-height: 100vh;
+        
+    }
+
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin: 0 auto 100px auto;
+    }
+
+    header > img {
+        height: 500px;
+    }
+
+    #title {
+        margin-top: 150px;
+    }
+
+    #title h1{
+        margin-bottom: 10px;
+    }
+
+    #first-section {
+        display: flex;
+        gap: 60px;
+    }
+
+    #second-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #second-section form {
+        width: 500px;
+    }
+
+    #second-section form fieldset textarea {
+        width: 500px;
+    }
+    
+}
